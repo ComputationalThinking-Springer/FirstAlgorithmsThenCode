@@ -1,8 +1,8 @@
 # Computational Thinking - First Algorithms, Then Code
 
-Python 2.7 implementations of the algorithms described in the book "Computational Thinking - First Algorithms, Then Code" of <a href="http://pages.di.unipi.it/ferragina/">Paolo Ferragina</a> and <a href="http://pages.di.unipi.it/luccio/">Fabrizio Luccio</a>, edit by Springer (2018).
+The implementation in Python 2.7 of the algorithms described in the book "Computational Thinking - First Algorithms, Then Code" of <a href="http://pages.di.unipi.it/ferragina/">Paolo Ferragina</a> and <a href="http://pages.di.unipi.it/luccio/">Fabrizio Luccio</a>, published by Springer (2018).
 
-The source codes of these algorithms are contained in the directories **dir_X_titles**, with a clear reference to the corresponding chapter. They are divided by files and the name of the file matches the name of the correspondic pseudo-code in the book. 
+The source codes of these algorithms are contained in the directories **chapter_X_titles**, with a clear reference to the corresponding chapter. They are divided by files and the name of the file matches the name of the correspondic pseudo-code in the book. 
 All these files are also collected in the compressed file *ComputationalThinking.tar.gz*.
 
 The algorithms can be run on the online page https://www.tutorialspoint.com/execute_python_online.php, see the tutorial for more information *Tutorial Python Online.pdf*
