@@ -14,8 +14,8 @@ def partition(c, p, q):
     The elements lower than or equal to the pivot are moved to its left 
     whereas the elements greater than the pivot are moved to its right.
     :param c: vector to partition
-    :param p: lower index of vector c to partition
-    :param q: upper index of vector c to partition
+    :param p: lower index of the part of the vector c to partition
+    :param q: upper index of the part of the vector c to partition
     """
 
     r = np.random.randint(p, q + 1)
