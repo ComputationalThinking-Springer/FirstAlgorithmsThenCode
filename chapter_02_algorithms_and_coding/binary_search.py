@@ -10,8 +10,8 @@ import math
 
 def binary_search(set, data):
     """
-    Binary search of a given element in a set
-    :param set: set on which search
+    Binary search of a given element in a sorted set
+    :param set: set to search in
     :param data: data to search for
     """
 
