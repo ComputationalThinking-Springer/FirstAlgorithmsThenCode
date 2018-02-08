@@ -1,14 +1,14 @@
 # Program REC_TH in Python
-# Figure 10.3 from the book "Il Pensiero Computazionale: dagli algoritmi al coding"
+# Figure 10.3 from the book "Computational Thinking: First Algorithms, Then Code"
 # Authors: Paolo Ferragina and Fabrizio Luccio
-# Published by Il Mulino
+# Published by Springer
 
 
 def rec_th(i, x, y, z):
     """
     A recursive solution for the Hanoi Tower problem. 
     The discs are n and the pegs are a,b,c, but the program refers to a generic phase in which 
-    are moved the discs in which are moved the smallest discs from a peg x to a peg y by using a temporary peg z.
+    are moved the smallest discs from a peg x to a peg y by using a temporary peg z.
     :param i: number of discs
     :param x: peg x
     :param y: peg y
@@ -16,7 +16,7 @@ def rec_th(i, x, y, z):
     """
 
     if i == 1:
-        y.append(x.pop())   # extreme situation with a unique disc
+        y.append(x.pop())   # extreme situation with one disc
         return
 
     rec_th(i - 1, x, z, y)
