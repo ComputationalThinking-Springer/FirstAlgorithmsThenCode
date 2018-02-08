@@ -1,5 +1,5 @@
 # Program COUNTING_SORT in Python
-# Figure 3.2 from the book "Computational Thinking: First Algorithms, Then Code"
+# Figure 6.8 from the book "Computational Thinking: First Algorithms, Then Code"
 # Authors: Paolo Ferragina and Fabrizio Luccio
 # Published by Springer
 
