@@ -1,7 +1,7 @@
 # Program MAXIMUM in Python
-# Figure 3.2 from the book "Il Pensiero Computazionale: dagli algoritmi al coding"
+# Figure 3.2 from the book "Computational Thinking: First Algorithms, Then Code"
 # Authors: Paolo Ferragina and Fabrizio Luccio
-# Published by Il Mulino
+# Published by Springer
 
 
 def maximum(set):
