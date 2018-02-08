@@ -1,8 +1,8 @@
-# Program in Python whcih include BWT_INVERSE and other programs allowing to calculate BWT_DIRECT and
+# Program in Python which includes BWT_INVERSE and other programs allowing to calculate BWT_DIRECT and
 # to print intermediate results
-# Figure 9.8 from the book "Il Pensiero Computazionale: dagli algoritmi al coding"
+# Figure 9.8 from the book "Computational Thinking: First Algorithms, Then Code"
 # Authors: Paolo Ferragina and Fabrizio Luccio
-# Published by Il Mulino
+# Published by Springer
 
 
 # loads mathematical functions
@@ -13,12 +13,12 @@ def bwt_direct(t):
     """
     Burrows-Wheeler algorithm for the permutation of a text t into a string l.
     :param t: text to be transformed
-    :return: l last, and f first, column of matrix M built starting from t
+    :return: l last column, f first column of matrix M built starting from t
     """
 
     line = t + '#'                          # adds a special character
 
-    M_str = list()                          # creates the matrix with all the rotations
+    M_str = list()                          # creates the matrix with all the cyclic rotations of M's row
     print "\n\nUnsorted matrix M"
 
     for i in range(0, len(line)):
@@ -47,9 +47,9 @@ def bwt_direct(t):
 
 def set_first_occurence(s, f):
     """
-    Returns the postition in f of the first occurrence of the symbol s.
+    Returns the position in f of the first occurrence of the symbol s.
     :param s: symbol to search for
-    :param f: string where to search on
+    :param f: string where to search in
     :return: position in f of the first occurrence of the character s
     """
 
@@ -63,9 +63,9 @@ def set_first_occurence(s, f):
 def rank(l, r):
     """
     Calculates the number of times tha letter l[r] appears in the prefix l[0:r-1].
-    :param l: last column of matrix M alphabetically sorted
-    :param r: iindex of the symbol for rank calculus
-    :return: number of times tha letter l[r] appears in the prefix l[0:r-1]
+    :param l: last column of matrix M (recall that M's rows are alphabetically sorted)
+    :param r: index of the symbol for rank computation
+    :return: number of times the letter l[r] appears in the prefix l[0:r-1]
     """
 
     conut = 0
@@ -78,10 +78,10 @@ def rank(l, r):
 
 def bwt_inverse(l, f):
     """
-    Algorithm that inversts the Burrows-Wheeler transformation, contained into string l, getting back the text t.
-    :param l: last column of matrix M alphabetically sorted
-    :param f: first column of matrix M alphabetically sorted (and consequently alphabetically sorted itself)
-    :return: tc decompressed text
+    Algorithm that inverts the Burrows-Wheeler transform, contained into string l, getting back the text t.
+    :param l: last column of matrix M (recall that M's rows are alphabetically sorted)
+    :param f: first column of matrix M (since M is sorted, then f is alphabetically sorted)
+    :return: the original text
     """
 
     n = len(l)
@@ -110,11 +110,11 @@ def main():
 
     l, f = bwt_direct(t)
 
-    print "\n First column of matrix M alphabetically sorted: ", f
+    print "\n First column of matrix M, it is alphabetically sorted: ", f
     print "\n BWT of text t: ", l
 
     t2 = bwt_inverse(l, f)
-    print "\n Original text (correctness checking): ", t2
+    print "\n Original text (for correctness check): ", t2
 
 
 if __name__ == "__main__":
