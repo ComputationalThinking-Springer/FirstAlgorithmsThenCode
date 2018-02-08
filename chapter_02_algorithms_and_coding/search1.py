@@ -6,8 +6,8 @@
 
 def search1(set, data):
     """
-    Search of a given element in a set
-    :param set: set on which search
+    Search for a given element in a set
+    :param set: set to search in
     :param data: data to search for
     """
 
