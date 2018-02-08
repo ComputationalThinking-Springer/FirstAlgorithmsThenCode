@@ -1,7 +1,7 @@
 # Program BINARY_SEARCH in Python
-# Figure 2.8 from the book "Il Pensiero Computazionale: dagli algoritmi al coding"
+# Figure 2.8 from the book "Computational Thinking: First Algorithms, Then Code"
 # Authors: Paolo Ferragina and Fabrizio Luccio
-# Published by Il Mulino
+# Published by Springer
 
 
 # loads mathematical functions
