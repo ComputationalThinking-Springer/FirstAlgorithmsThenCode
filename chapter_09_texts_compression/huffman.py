@@ -18,7 +18,7 @@ def frequencies(t):
 
 def huffman(sigma_f):
     """
-    Algorithm by Huffman for the statistical compression of texts.
+    The Huffman algorithm for the statistical compression of texts.
     :param sigma_f: sequence of letters with relative frequency
     :return: tree for encoding the letters of the input text
     """
@@ -30,9 +30,9 @@ def huffman(sigma_f):
         v = sorted(s, key=s.get)[1]
         w = '%s%s' % (u, v)                 # create the node w
         s[w] = s[u] + s[v]                  # add the pair <w, f[w]> to s
-        del s[u]                            # delete u, v from s
+        del s[u]                            # delete u,v from s
         del s[v]
-        tree[w] = (s[w], u, v)              # insert on the tree, node w as parent of u, v
+        tree[w] = (s[w], u, v)              # insert in the tree, the node w as parent of u and v
 
     return tree
 
