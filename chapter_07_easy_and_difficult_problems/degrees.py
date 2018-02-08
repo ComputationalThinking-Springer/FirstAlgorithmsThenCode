@@ -12,16 +12,16 @@ def degrees(M):
     """
     Program for parity checking of the degree of all the nodes in a graph with n nodes.
     :param M: matrix with dimension n x n
-    :return: g output vector for the nodes' degree
+    :return: g output vector of the nodes' degree
     """
 
     n, n = M.shape
-    g = [0] * n                             # output vector containing the nodes degree
+    g = [0] * n                             # output vector containing the node degrees
 
     for i in range(0, n):
         degree = 0                          # indicates the degree of node i
         for j in range(0, n):
-            degree = degree + M[i, j]       # calculate the degree g for node i
+            degree = degree + M[i, j]       # calculates the degree g of node i
         if degree % 2 == 1:
             print "The graph contains a node with odd degree"
             return g
