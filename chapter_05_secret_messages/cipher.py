@@ -1,23 +1,23 @@
 # Program ENCODE in Python
-# Figure 6.3 from the book "Il Pensiero Computazionale: dagli algoritmi al coding"
+# Figure 5.2 from the book "Computational Thinking: First Algorithms, Then Code"
 # Authors: Paolo Ferragina and Fabrizio Luccio
-# Published by Il Mulino
+# Published by Springer
 
 
 # loads trasform
 from transform import transform
 
 
-def encode():
+def cipher():
     """
     Transforms a message into the relative cryptogram by applying
     a translation module 26 of k positions in the alphabet, 
     where k is the cypher key.
     """
 
-    k = int(raw_input('give me the key: '))
+    k = int(raw_input('communicate the key: '))
 
-    msg = raw_input('give me the message: ')        # msg is a vector of 140 characters containing the message
+    msg = raw_input('communicate the message: ')       # msg is a vector of 140 characters containing the message
 
     crt = [''] * 140                                # crt is a vector of 140 characters containing the cryptogram
     for h in range(0, 140):
@@ -30,7 +30,7 @@ def encode():
 
 def main():
 
-    encode()
+    cipher()
 
 
 if __name__ == "__main__":
@@ -39,9 +39,9 @@ if __name__ == "__main__":
 
 """
 Example of interaction with the user
-python cifra.py
-give me the key: 3
-give me the message: PENSIEROCOMPUTAZIONALE
+python cipher.py
+communicate the key: 3
+communicate the message: PENSIEROCOMPUTAZIONALE
 SHQVLHURFRPSXWDCLRQDOH 
 Process finished with exit code 0
 """
