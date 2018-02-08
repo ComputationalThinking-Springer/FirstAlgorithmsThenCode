@@ -6,9 +6,8 @@
 
 def intersection3(a, b):
     """
-    Prints all the elements of vector a which are contained also in vector b.
+    Print all the elements of vector a which are contained in vector b.
     Both vectors must be sorted.
-    It si faster than INTERSECTION1 and INTERSECTION2.
     :param a: sorted vector a of n elements
     :param b: sorted vector b of m elements
     """
