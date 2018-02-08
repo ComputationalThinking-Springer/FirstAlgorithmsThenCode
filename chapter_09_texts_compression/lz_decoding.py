@@ -10,8 +10,8 @@ from encode_lz import *
 
 def decode_lz(c):
     """
-    Algorithm by Lempel e Ziv for the inverse transformation from a sequence of pairs c to the original text t.
-    :param t: c pairs (0 or previous distance of appearance, single letter or repeated substring length) 
+    Lempel-Ziv algorithm for the inverse transformation from a sequence of pairs c to the original text t.
+    :param t: c pairs (0 or distance of previous substring occurrence, single letter or repeated substring length) 
     :return: decompressed text
     """
 
