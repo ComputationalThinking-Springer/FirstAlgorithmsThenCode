@@ -9,7 +9,7 @@ def fusion(a, b):
     Merges two sorted sequences a and b in a sorted sequence f.
     :param a: sorted sequence
     :param b: sorted sequence
-    :return: f is the sorted vector contationing all the elements of a join b.
+    :return: f is the sorted sequence containing all the elements of a union b.
     """
 
     m = len(a)                  # m is the number of elements of a and b
