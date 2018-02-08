@@ -10,7 +10,7 @@ import numpy as np
 
 def matrix_product(A, B):
     """
-    Program to calculate the matrix product.
+    Program to calculate the product of two matrices.
     :param A: matrix with dimension m x n
     :param B: matrix with dimension n x p
     :return: C = A x B matrix with dimension m x p
