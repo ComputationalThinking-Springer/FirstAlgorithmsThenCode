@@ -6,7 +6,7 @@
 
 def intersection1(a, b):
     """
-    Print all the elements of vector a which are contained also in vector b.
+    Print all the elements of vector a which are contained in vector b.
     The search is performed by comparing each element of a with all the elements of b.
     The vectors can be unsorted because all the elements are sequentially examined and their equality is tested.
     :param a: vector a of n elements
