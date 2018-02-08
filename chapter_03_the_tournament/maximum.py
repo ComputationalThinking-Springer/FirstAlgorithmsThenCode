@@ -6,8 +6,8 @@
 
 def maximum(set):
     """
-    Search of the maximum in a set of integers
-    :param set: set of integers on which to seek the maximum
+    Search for the maximum of a set of integers
+    :param set: set of integers in which to search for the maximum
     """
 
     n = len(set)  # n is the number of elements of set
