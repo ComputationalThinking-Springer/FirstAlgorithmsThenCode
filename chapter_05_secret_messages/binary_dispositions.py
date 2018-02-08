@@ -6,13 +6,13 @@
 
 def binary_dispositions(n):
     """
-    Program for construction and printing of all the binary dispositions of n bit 
+    Program for constructing and printing all the binary dispositions of n bit 
     in a vector v, for binary growing numbers.
-    :param n: numbers of bit of the vector
+    :param n: number of bits of the vector
     """
 
     v = [0] * n
-    print v[::-1]           # print the first dispostion 00...0
+    print v[::-1]           # prints the first disposition 00...0
 
     i = 0
     while i <= n - 1:
@@ -21,7 +21,7 @@ def binary_dispositions(n):
             print v[::-1]   # print the last disposition built
             i = 0           # move back to the least meaningful bit
         else:
-            v[i] = 0        # the bit 1 in position i turns into 0
+            v[i] = 0        # the bit 1 in position i is changed to 0
             i = i + 1       # moves to the next bit
 
 
