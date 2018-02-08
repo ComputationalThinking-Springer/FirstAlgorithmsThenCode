@@ -1,7 +1,7 @@
-# Program DECODE_LZ in Python
-# Figure 9.6 from the book "Il Pensiero Computazionale: dagli algoritmi al coding"
+# Program LZ_DECODING in Python
+# Figure 9.6 from the book "Computational Thinking: First Algorithms, Then Code"
 # Authors: Paolo Ferragina and Fabrizio Luccio
-# Published by Il Mulino
+# Published by Springer
 
 
 # loads encode_lz
@@ -10,8 +10,8 @@ from encode_lz import *
 
 def decode_lz(c):
     """
-    Algorithm of Lempel e Ziv for the inverse transformation from a sequence of couples c to the original text t.
-    :param t: c couples (0 or previous distance of appearance, single letter or repeated substring length) 
+    Algorithm by Lempel e Ziv for the inverse transformation from a sequence of pairs c to the original text t.
+    :param t: c pairs (0 or previous distance of appearance, single letter or repeated substring length) 
     :return: decompressed text
     """
 
@@ -19,7 +19,7 @@ def decode_lz(c):
     t = dict()
 
     while len(c) > 0:
-        a, b = c.pop(0)         # extracts the first couple, let be (a, b)
+        a, b = c.pop(0)         # extracts the first pair, let it be <a, b>
         if a == 0:
             t[i] = b
             i = i + 1
@@ -37,10 +37,10 @@ def main():
     print "\n input text: ", t
 
     c = encode_lz(t)
-    print "\n sequence of couples: ", c
+    print "\n sequence of pairs: ", c
 
     t2 = decode_lz(c)
-    print "\n text for sequence of couples (for correctness control): ", t2
+    print "\n text derived from the pairs sequence (for correctness check): ", t2
 
 
 if __name__ == "__main__":
