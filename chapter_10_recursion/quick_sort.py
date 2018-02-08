@@ -1,7 +1,7 @@
 # Program QUICK_SORT in Python
-# Figure 10.12 from the book "Il Pensiero Computazionale: dagli algoritmi al coding"
+# Figure 10.12 from the book "Computational Thinking: First Algorithms, Then Code"
 # Authors: Paolo Ferragina and Fabrizio Luccio
-# Published by Il Mulino
+# Published by Springer
 
 
 # loads mathematical functions
@@ -11,11 +11,11 @@ import numpy as np
 def partition(c, p, q):
     """
     Rearrange a vector c in the portion between the indexes p and q, around a random selected pivot element.
-    The elements lower than or equals to the pivot are moved to its left 
-    and the elements greater are moved to its right.
+    The elements lower than or equal to the pivot are moved to its left 
+    whereas the elements greater than the pivot are moved to its right.
     :param c: vector to partition
-    :param p: lower index of vector c
-    :param q: upper index of vector c
+    :param p: lower index of the part of the vector c to partition
+    :param q: upper index of the part of the vector c to partition
     """
 
     r = np.random.randint(p, q + 1)
@@ -38,8 +38,8 @@ def quick_sort(c, p, q):
     """
     Sort the vector c by using the function partition.
     :param c: vector to be sorted
-    :param p: lower index of vector c
-    :param q: upper index of vector c
+    :param p: lower index of the part of the vector c to sort
+    :param q: upper index of the part of the vector c to sort
     """
 
     if p < q:
