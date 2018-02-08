@@ -1,7 +1,7 @@
 # Program PERMUTATIONS in Python
-# Figure 10.8 from the book "Il Pensiero Computazionale: dagli algoritmi al coding"
+# Figure 10.8 from the book "Computational Thinking: First Algorithms, Then Code"
 # Authors: Paolo Ferragina and Fabrizio Luccio
-# Published by Il Mulino
+# Published by Springer
 
 
 def explore(p):
@@ -21,9 +21,9 @@ def permutations(p, k):
         explore(p)
     else:
         for i in range(k, n):
-            p[i], p[k] = p[k], p[i]     # scambia p[k] con p[i]
+            p[i], p[k] = p[k], p[i]     # swap p[k] with p[i]
             permutations(p, k + 1)
-            p[i], p[k] = p[k], p[i]     # ripristina la situazione originaria
+            p[i], p[k] = p[k], p[i]     # reset the original vector content
 
 
 def main():
