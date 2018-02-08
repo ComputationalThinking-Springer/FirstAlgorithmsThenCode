@@ -6,9 +6,9 @@
 
 def intersection1(a, b):
     """
-    Prints all the elements of vector a which are contained also in vector b.
+    Print all the elements of vector a which are contained also in vector b.
     The search is performed by comparing each element of a with all the elements of b.
-    The vectors can be not sorted because all the elements are sequentially examined and their equality is tested.
+    The vectors can be unsorted because all the elements are sequentially examined and their equality is tested.
     :param a: vector a of n elements
     :param b: vector b of m elements
     """
@@ -24,7 +24,7 @@ def intersection1(a, b):
 
 def main():
 
-    # the vectors are not sorted out of purpose
+    # the vectors are not sorted, on purpose
     pisa = [3, 9, 1, 200, 144]
     tower = [15, 9, 11, 101, 150, 21, 27, 500, 800, 89, 811]
 
