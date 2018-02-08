@@ -8,7 +8,7 @@ def quadratic(d):
     """
     Calculates the portion d[a: v] with the maximum sum
     by testing all the possible intervals [i,j] in [1,n-1] inclusive
-    :param d: vector of positive and negative numbers, d[0] initial value of the action
+    :param d: vector of positive and negative numbers, d[0] initial value of the stock
     """
 
     n = len(d)  # n is the number of elements of d
