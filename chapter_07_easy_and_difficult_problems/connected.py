@@ -1,14 +1,14 @@
-# Program CONNECTION in Python
-# Figure 7.4 from the book "Il Pensiero Computazionale: dagli algoritmi al coding"
+# Program CONNECTED in Python
+# Figure 7.4 from the book "Computational Thinking: First Algorithms, Then Code"
 # Authors: Paolo Ferragina and Fabrizio Luccio
-# Published by Il Mulino
+# Published by Springer
 
 
 # loads mathematical functions
 import numpy as np
 
 
-def connection(M):
+def connected(M):
     """
     Program to check if a graph with n nodes described by matrix M, is connected 
     through a breadth-first search.
