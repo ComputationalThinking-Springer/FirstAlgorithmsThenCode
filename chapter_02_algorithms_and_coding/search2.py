@@ -7,7 +7,7 @@
 def search2(set, info, data):
     """
     Search the information associated with a given element.
-    :param set: set on which search
+    :param set: set to search in
     :param info: vector of information
     :param data: data to search for
     """
