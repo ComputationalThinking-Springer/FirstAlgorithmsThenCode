@@ -10,8 +10,8 @@ import math
 
 def merge_sort(c):
     """
-    Sorts a vector c of n = 2^h integer among which is defined a comparison relation <=. 
-    It uses the structur of the fusion program.
+    Sort a vector c of n = 2^h integers among which is defined a comparison relation <=. 
+    It includes the fusion program, properly adapted.
     :param c: vector to be sorted
     """
 
