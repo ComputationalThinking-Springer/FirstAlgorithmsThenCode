@@ -11,18 +11,18 @@ import numpy as np
 def connected(M):
     """
     Program to check if a graph with n nodes described by matrix M, is connected 
-    through a breadth-first search.
+    through a breadth-first visit of the graph.
     :param M: matrix with dimension n x n
     """
 
     n, n = M.shape
-    r = [0] * n                       # vector of n cells to store the nodes reachable from 0
+    r = [0] * n                       # vector of n positions storing the nodes reachable from 0
 
     r[0] = 0
     s = 0
     f = 0
     while s <= f:                     # f indicates the last cell occupied by r
-        i = r[s]                      # indicates the node examinded
+        i = r[s]                      # indicates the node examined
         for j in range(1, n):
             if M[i, j] > 0:           # that is for each element > 0 at row i
                 if j not in r[0: f]:
@@ -39,7 +39,7 @@ def connected(M):
 
 def main():
 
-    # The graph must be indirected and consequently
+    # The graph must be undirected and consequently
     # the matrices M1 e M2 must be symmetric
 
     M1 = np.asmatrix([
