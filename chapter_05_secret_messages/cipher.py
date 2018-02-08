@@ -11,7 +11,7 @@ from transform import transform
 def cipher():
     """
     Transforms a message into the relative cryptogram by applying
-    a translation module 26 of k positions in the alphabet, 
+    a sum module 26 of k positions in the alphabet, 
     where k is the cypher key.
     """
 
