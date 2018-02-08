@@ -18,21 +18,21 @@ def frequencies(t):
 
 def huffman(sigma_f):
     """
-    Algorithm of Huffman for the statistical compression of texts.
+    Algorithm by Huffman for the statistical compression of texts.
     :param sigma_f: sequence of letters with relative frequency
-    :return: tree tree for encoding the letters of the text
+    :return: tree for encoding the letters of the input text
     """
     tree = {u: (sigma_f[u], None, None) for u in sigma_f}
     s = {u: sigma_f[u] for u in sigma_f}
 
     for i in range(1, len(sigma_f)):
-        u = sorted(s, key=s.get)[0]         # select the couple u and v such that f[u] and f[v] are minimum
+        u = sorted(s, key=s.get)[0]         # select the pair u and v such that f[u] and f[v] are minimum
         v = sorted(s, key=s.get)[1]
         w = '%s%s' % (u, v)                 # create the node w
-        s[w] = s[u] + s[v]                  # add the couple w, f[w] to s
+        s[w] = s[u] + s[v]                  # add the pair <w, f[w]> to s
         del s[u]                            # delete u, v from s
         del s[v]
-        tree[w] = (s[w], u, v)              # insert on the tree node w as parent of u, v
+        tree[w] = (s[w], u, v)              # insert on the tree, node w as parent of u, v
 
     return tree
 
@@ -75,7 +75,7 @@ def compress_huffman(t, code):
 def main():
 
     t = 'LABELLABALLA'
-    print "\n Testo in input: ", t
+    print "\n Input text: ", t
 
     sigma_f = frequencies(t)
     # print sigma_f
