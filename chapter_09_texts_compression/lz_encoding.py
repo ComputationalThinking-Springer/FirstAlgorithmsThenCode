@@ -22,9 +22,9 @@ def find_the_longest_substring(t, i):
 
 def lz_encoding(t):
     """
-    Algorithm by Lempel e Ziv to trasform the text t into a sequence of pairs c.
+    Lempel-Ziv algorithm to trasform the text t into a sequence of pairs c.
     :param t: text to compress
-    :return: pairs having the form (0 or previous distance of appearance, single letter or repeated substring length) 
+    :return: pairs having the form (0 or distance of previous occurrence of substring, single letter or repeated substring length) 
     """
 
     n = len(t)
