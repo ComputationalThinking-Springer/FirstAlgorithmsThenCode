@@ -6,7 +6,7 @@
 
 def insertion_sort(c):
     """
-    Sort a vector c of n integers among which is defined a comparison relation.
+    Sort a vector c of n integers among which is defined a comparison relation >.
     :param c: vector to be sorted
     """
 
