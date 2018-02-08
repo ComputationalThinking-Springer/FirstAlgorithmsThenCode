@@ -1,7 +1,7 @@
 # Program REC_BS in Python
-# Figure 10.6 from the book "Il Pensiero Computazionale: dagli algoritmi al coding"
+# Figure 10.6 from the book "Computational Thinking: First Algorithms, Then Code"
 # Authors: Paolo Ferragina and Fabrizio Luccio
-# Published by Il Mulino
+# Published by Springer
 
 
 # loads mathematical functions
@@ -10,8 +10,8 @@ import math
 
 def rec_bs(set, i, j, data):
     """
-    Recursive version of binary search of an element in a given set.
-    :param set: orderd set on which to search on
+    Recursive version of binary search for an element in a given set.
+    :param set: orderd set in which to search
     :param i: lower index of vector set
     :param j: upper index of vector set
     :param data: data to search for
@@ -36,7 +36,7 @@ def main():
 
     city = ['FI', 'MI', 'PA', 'NA', 'BO', 'TO', 'VE', 'CA']
 
-    print "\n Vector to search on: ", city
+    print "\n Vector to search in: ", city
 
     rec_bs(city, 0, len(city) - 1, 'NA')
 
