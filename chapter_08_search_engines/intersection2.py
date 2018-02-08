@@ -10,10 +10,10 @@ import math
 
 def intersection2(a, b):
     """
-    Prints all the elements of vector a which are contained also in vector b.
-    The search of each element b[k] in a is performed by means of the algorithm BINARY_SEARCH on a 
-    copied and adapted here for printing the right elements. 
-    Vector b can be not sorted because all its elements are sequentially examined.
+    Print all the elements of vector a which are contained in vector b.
+    The search of each element b[k] in a is performed by means of the algorithm BINARY_SEARCH, which is here 
+    copied and adapted for printing the common elements. 
+    Vector b can be unsorted because all of its elements are sequentially examined.
     :param a: sorted vector a of n elements
     :param b: vector b of m elements (not necessarily sorted)
     """
@@ -28,7 +28,7 @@ def intersection2(a, b):
             c = int(math.floor((i + j) / 2))
             if b[k] == a[c]:
                 print b[k]
-                break              # the break command exit from the while loop
+                break              # the break command exits from the while loop
             elif b[k] < a[c]:
                 j = c - 1
             else:
