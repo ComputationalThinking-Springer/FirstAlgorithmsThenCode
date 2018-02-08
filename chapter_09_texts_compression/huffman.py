@@ -1,7 +1,7 @@
 # Program HUFFMAN in Python
-# Figure 9.2 from the book "Il Pensiero Computazionale: dagli algoritmi al coding"
+# Figure 9.2 from the book "Computational Thinking: First Algorithms, Then Code"
 # Authors: Paolo Ferragina and Fabrizio Luccio
-# Published by Il Mulino
+# Published by Springer
 
 
 # loads auxiliary functions
