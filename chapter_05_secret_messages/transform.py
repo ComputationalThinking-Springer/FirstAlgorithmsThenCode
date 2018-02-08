@@ -6,8 +6,8 @@
 
 def transform(k, c):
     """
-    Transforms the input character cinto the output cryptogram t by applying
-    a translation module 26 of k positions in the alphabet, 
+    Transforms the input character into the output encrypted character t by applying
+    a sum module 26 of k positions in the alphabet, 
     where k is the cypher key.
     :param k: cipher k
     :param c: input c character
