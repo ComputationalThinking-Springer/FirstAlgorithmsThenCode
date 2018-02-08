@@ -1,7 +1,7 @@
-# Program ENCODE_LZ in Python
-# Figure 9.5 from the book "Il Pensiero Computazionale: dagli algoritmi al coding"
+# Program LZ_ENCODING in Python
+# Figure 9.5 from the book "Computational Thinking: First Algorithms, Then Code"
 # Authors: Paolo Ferragina and Fabrizio Luccio
-# Published by Il Mulino
+# Published by Springer
 
 
 def find_the_longest_substring(t, i):
@@ -20,11 +20,11 @@ def find_the_longest_substring(t, i):
     return max_l, max_dist
 
 
-def encode_lz(t):
+def lz_encoding(t):
     """
-    Algorithm of Lempel e Ziv for trasforming the text t into a sequence of couples c.
+    Algorithm by Lempel e Ziv to trasform the text t into a sequence of pairs c.
     :param t: text to compress
-    :return: couples with the form (0 or previous distance of appearance, single letter or repeated substring length) 
+    :return: pairs having the form (0 or previous distance of appearance, single letter or repeated substring length) 
     """
 
     n = len(t)
@@ -32,11 +32,11 @@ def encode_lz(t):
     c = list()
 
     while i < n:
-        l, dist = find_the_longest_substring(t, i)    # find the longest repeated substring appearing in i
-        if l == 0:                                    # t[i] appears for teh first time
+        l, dist = find_the_longest_substring(t, i)    # find the longest repeated substring starting at i
+        if l == 0:                                    # t[i] appears for the first time
             c.append((0, t[i]))
             i = i + 1
-        else:                                         # that is, exists a copy with length l > 0
+        else:                                         # that is, it does exist a copy with length l > 0
             c.append((dist, l))
             i = i + l
 
@@ -46,10 +46,10 @@ def encode_lz(t):
 def main():
 
     t = 'LABELLABALLA'
-    print "\n Testo in input: ", t
+    print "\n Input text: ", t
 
-    c = encode_lz(t)
-    print "\n Sequenza di coppie: ", c
+    c = lz_encoding(t)
+    print "\n Sequence of pairs: ", c
 
 
 if __name__ == "__main__":
